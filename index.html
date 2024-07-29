@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>flexbox</title>
+</head>
+    <style>
+        .item {
+          height:100px;
+          width: 500px;
+          background-color: #062628;
+          color: aqua;
+          margin: 10px;
+          font-size: 50px;
+          padding: 10px;
+        }
+        .container {
+          height:150px;
+          width: 800px;
+          background-color: #daf447;
+          padding: 5px;
+          border-radius: 5px;
+          display: flex;
+          flex-direction: row;
+        }
+        .item1 {
+        height: 200px;
+        width: 200px;
+        background-color: #62eef6;
+        margin: 10px;
+        font-size: 50px;
+        padding: 5px;
+        border-radius: 10px;
+        border: solid 5px rgb(238, 143, 143);
+      }
+      .container1 {
+        height:700px;
+        width:240px;
+        background-color: #240cab;
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        border-radius: 5px;
+      }
+      .item2 {
+        height: 100px;
+        width: 500px;
+        background-color: #57ee78;
+        margin: 10px;
+        font-size: 50px;
+        padding: 5px;
+        border-radius: 10px;
+        border: solid 5px rgb(139, 121, 121);
+      }
+
+      .container2 {
+        height:150px;
+        width: 800px;
+        background-color: #101212;
+        padding: 5px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: row-reverse;
+      }
+      .item3 {
+        height: 200px;
+        width: 200px;
+        background-color: #30f2fd;
+        margin: 10px;
+        font-size: 50px;
+        padding: 5px;
+        border-radius: 10px;
+        border: solid 5px rgb(227, 119, 119);
+      }
+
+      .container3 {
+        height: 700px;
+        width: 240px;
+        background-color: #240853;
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 5px;
+        border-radius: 5px;
+      }
+      .item4 {
+        height: 100px;
+        width: 210px;
+        margin: 10px;
+        background-color: #f05c0c;
+        font-size: 50px;
+        padding: 5px;
+        border-radius: 10px;
+        border: solid 5px rgb(210, 236, 80);
+      }
+
+      .container4 {
+        height:200px;
+        width: 1000px;
+        background-color: #26f634;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        padding: 5px;
+        border-radius: 5px;
+      }
+      .item5 {
+        height: 200px;
+        width: 200px;
+        background-color: #4ff573;
+        margin: 10px;
+        font-size: 50px;
+        padding: 5px;
+        border-radius: 10px;
+        border: solid 5px rgb(241, 37, 37);
+      }
+
+      .container5 {
+        height: 380px;
+        width: 900px;
+        background-color: #d84e7f;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        padding: 5px;
+        border-radius: 5px;
+      }
+      .item6 {
+        height: 200px;
+        width: 200px;
+        background-color: #bdeb4b;
+        margin: 10px;
+        font-size: 50px;
+        padding: 5px;
+        border-radius: 10px;
+        border: solid 5px rgb(217, 81, 81);
+      }
+
+      .container6 {
+        height: 380px;
+        width: 900px;
+        background-color: #6b2ba4;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 5px;
+        border-radius: 5px;
+      }
+      .item7 {
+        height: 200px;
+        width: 200px;
+        background-color: tomato;
+        margin: 10px;
+        font-size: 50px;
+        padding: 10px;
+      }
+      .container7 {
+        height:300px;
+        width: 1500px;
+        background-color: aqua;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .item8 {
+        height: 200px;
+        width: 200px;
+        background-color: #6aeef5;
+        margin: 10px;
+        font-size: 50px;
+        padding: 5px;
+        border-radius: 10px;
+        border: solid 5px rgb(36, 33, 33);
+      }
+
+      .container8 {
+        height: 380px;
+        width: 900px;
+        background-color: #f6fd27;
+        padding: 5px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+      }
+      .item9 {
+        background-color: rgb(247, 92, 57);
+        height: 200px;
+        width: 200px;
+        margin: 10px;
+        font-size: 50px;
+        padding: 10px;
+        border: solid 5px  rgb(15, 11, 10);
+      }
+      .container9 {
+        height: 380px;
+        width: 900px;
+        background-color: rgb(6, 234, 181);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+      .item10 {
+        background-color: #2fdee7;
+        height: 200px;
+        width: 200px;
+        margin: 10px;
+        font-size: 50px;
+        padding: 5px;
+        border-radius: 10px;
+        border: solid 5px rgb(200, 179, 179);
+      }
+
+      .container10 {
+        height: 380px;
+        width: 900px;
+        background-color: #3e2bec;
+        padding: 5px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: row;
+        align-items: end;
+      }
+        .text{
+            font-family: cursive;
+            font-size:30px;
+            color: darkmagenta;
+        }
+      </style>
+<body>
+    <h1  class="text">Flex Direction:Row</h1><br>
+<div class="container">
+    <div class="item">Rose</div>
+    <div class="item">Lotus</div>
+    <div class="item">Sunflower</div>
+  </div><hr/><hr/>
+  <h1 div class="text">Flex Direction:Column</h1><br>
+  <div class="container1">
+    <div class="item1">Mogra</div>
+    <div class="item1">Jasmine</div>
+    <div class="item1">Lily</div>
+  </div>
+  <hr/><hr/>
+  <h1 div class="text">Flex Direction:Row Reverse</h1><br>
+  <div class="container2">
+    <div class="item2">Mogra</div>
+    <div class="item2">Jasmine</div>
+    <div class="item2">Lily</div>
+  </div>
+  <hr/><hr/>
+  <h1  class="text">Flex Direction:Row</h1><br>
+  <div class="container3">
+      <div class="item3">Rose</div>
+      <div class="item3">Lotus</div>
+      <div class="item3">Sunflower</div>
+    </div><hr/><hr/>
+    <h1  class="text">Justify-Content:Start</h1><br>
+  <div class="container4">
+      <div class="item4">Rose</div>
+      <div class="item4">Lotus</div>
+      <div class="item4">Sunflower</div>
+    </div><hr/><hr/>
+    <h1  class="text">Justify-Content:End</h1><br>
+    <div class="container5">
+        <div class="item5">Rose</div>
+        <div class="item5">Lotus</div>
+        <div class="item5">Sunflower</div>
+      </div><hr/><hr/>
+      <h1  class="text">Justify-Content:Center</h1><br>
+      <div class="container6">
+          <div class="item6">Rose</div>
+          <div class="item6">Lotus</div>
+          <div class="item6">Sunflower</div>
+        </div><hr/><hr/>
+        <h1  class="text">Justify-Content:Space Between</h1><br>
+        <div class="container7">
+            <div class="item7">Rose</div>
+            <div class="item7">Lotus</div>
+            <div class="item7">Sunflower</div>
+          </div><hr/><hr/>
+          <h1  class="text">Justify-Content:Space Evenly</h1><br>
+        <div class="container8">
+            <div class="item8">Rose</div>
+            <div class="item8">Lotus</div>
+            <div class="item8">Sunflower</div>
+          </div><hr/><hr/>
+          <h1  class="text">Justify-Content:Space Around</h1><br>
+             <div class="container9">
+               <div class="item9">Rose</div>
+               <div class="item9">Lotus</div>
+               <div class="item9">Sunflower</div>
+            </div><hr/><hr/>   
+            <h1  class="text">Align-Item: End;</h1><br>
+            <div class="container10">
+                <div class="item10">Rose</div>
+                <div class="item10">Lotus</div>
+                <div class="item10">Sunflower</div>
+              </div><hr/><hr/>
+</body>
+</html>
